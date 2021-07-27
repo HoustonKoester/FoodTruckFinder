@@ -1,46 +1,47 @@
-# FoodTruckFinder
-Food Truck Finder 🍕🍗
-Description: This application is made to help users find specific or general food options that food trucks offer that may not have a website or are on google maps. Can offer location, menu, food type filtering. 
-Technologies: Angular, Spring
-Applicable APIs: Google Maps, Yelp
+# Food Truck Finder 
 
-User Stories
-As a user I want to be able to create an account on the website
+### Project discription and overview
 
-As a user I want to be    able to login
+This project is a food truck finder application to find and display information about food trucks in Austin Texas
 
-As a user I want to be able to logout
+Users can login to the application and using the google maps API to search through food trucks located in Austin Texas
 
-As a user I want to be able to save my favourite food truck
+A user can also choose to apply to have their own food truck added to the map using the food truck application feature.
 
-As a user I want to be able to view a map that contains the locations of food trucks
+### List of included features
+- A user can login/logout
+- A user can view the app dashboard
+- A user can submit a food truck application
+- A user can view information about the food trucks by clicking on the map markers
+- A user can view the menu, hours of opperation, and the ratings and reviews for the food truck that they clicked on
 
-As a user I want to be able to filter down the map so that I can find specific food trucks
-
-As a user I want to be able to see a food trucks menus
-
-As a user I want to be able to see a food trucks reviews
-
-*As a user I want to be able to order food from a food truck
-
-*As a user I want to be able to save my card information for easy checkout
-
-*User stories that may be added later if time permits
+### Future development
+- Allow users to submit their own reviews of the food truck
+- User the Yelp API to get reviews from yelp along with the reviews displayed on our application
+- Develop a manager and food truck owner profile so that food truck owners/website managers can view and edit food truck information
 
 
-As a manger I want to add food trucks 
+### List of used technologies
+- Java
+- Spring Framework
+- Angular 2+
+- HTML
+- CSS
+- Hibernate
+- Log4J
+- JUnit
+- SQL
+- TypeScript
 
-As a manger I want to remove food trucks
+### How to setup project
+Inside the project folder you must add information to 2 files to be able to have the project work correctly. 
 
-As a manager I want to update food truck information
+You must add in your database information to the hibernate.cfg located in FoodTruckFinder/src/main/resources/hibernate.cfg
 
-As a manager I want to be able to set the hours of a food truck being opened (and if they’ll be closed on certain days)
+You must also add in the google maps API key located in the food-truck-finder/src/app/dashboard on line 22.
 
-As a manager I want to verify food truck owners
+The databases must be setup in accordance with how data is accessed throughout the rest of the project.
 
+To start the application you can open both of the projects individually (food-truck-finder as a angular project and FoodTruckFinder as a Maven project) the base ports for the project are localhost4200 for the angular project and localhost8080 for the Maven/backend.
 
-As a food truck owner I want to be verified - only once
-
-As a food truck owner I want to change my menu
-
-As a food truck owner I want to respond to my reviews
+###### Project Created By: Houston Koester, Edwin Munoz, Isabel Sanchez, and Peter Fowler
